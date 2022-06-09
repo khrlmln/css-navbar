@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Menu</title>
+    <style>
+      * {
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* horizontal navbar styling */
+      .hr-navbar {
+        background-color: #4c6ca0;
+        margin: 10px;
+        border-radius: 5px;
+        overflow: auto;
+      }
+      .hr-navbar ul {
+        display: flex;
+      }
+      .hr-navbar ul li a {
+        color: #fff;
+        display: block;
+        padding: 15px;
+      }
+      .hr-navbar ul li a:hover {
+        background-color: cornflowerblue;
+      }
+      /* gap between navbar 1 and 2 */
+      .gap {
+        margin-bottom: 40px;
+      }
+      /* horizontal navbar styling */
+      .vert-navbar {
+        border: 1px solid #ddd;
+        width: 25%;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .vert-navbar ul {
+        padding: 15px;
+      }
+      .vert-navbar ul li {
+        display: block;
+        border-bottom: 1px dotted #000;
+        font-size: 18px;
+        line-height: 2.4em;
+      }
+      .vert-navbar ul li:last-child {
+        border: none;
+      }
+      .vert-navbar ul li a {
+        color: #000;
+      }
+      .vert-navbar ul li a:hover {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="hr-navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="gap"></div>
+      <nav class="vert-navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
